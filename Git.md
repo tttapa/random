@@ -3,7 +3,7 @@
 ## 2. Download de hele repository
 ```sh
 cd ~/Documents/KUL/2018-2019/P_O/  # Ga naar de map waar je de EAGLE repository wilt opslaan
-git clone git clone git@gitlab.esat.kuleuven.be:EAGLE-gitlab/EAGLE1/EAGLE-students-2018.git
+git clone git@gitlab.esat.kuleuven.be:EAGLE-gitlab/EAGLE1/EAGLE-students-2018.git
 cd EAGLE-students-2018  # Ga naar de map van de EAGLE repository
 ```
 Alle code en de geschiedenis van de repository van ons team staat nu lokaal op je computer. Je kan nu lokaal wijzigingen maken en toevoegen aan de repository.
