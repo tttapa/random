@@ -85,8 +85,7 @@ git commit -m "Fix buffer overflow logging system"
 
 ## 7. Commit gewijzigde bestanden
 Elke keer expliciet ingeven welke bestanden gestaged moeten worden is nogal omslachtig. Meestal doe je het dan ook alleen maar voor nieuwe bestanden, of als je wilt kiezen welke wijzigingen je wilt toevoegen en welke niet.  
-Wanneer je enkel bestanden hebt gewijzigd die al bijgehouden worden door git, kan je de optie `-a` gebruiken bij het commit commando.
-
+Wanneer je enkel bestanden hebt gewijzigd die al bijgehouden worden door git, kan je de optie `-a` gebruiken bij het commit commando. Dit vervangt dan `git add`, maar voegt geen 'untracked files' toe aan de index.
 ```sh
 git commit -am "<message>"
 ```
