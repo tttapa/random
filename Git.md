@@ -1,4 +1,14 @@
+## 0. Installeer git
+### Ubuntu/Debian
+```sh
+sudo apt install git
+```
+### Windows
+[https://git-scm.com/downloads](https://git-scm.com/downloads)  
+Open daarna Git Bash.
+
 ## 1. Create SSH key pair and add to your GitLab account
+[https://gitlab.esat.kuleuven.be/help/ssh/README](https://gitlab.esat.kuleuven.be/help/ssh/README)
 
 ## 2. Download de hele repository
 ```sh
