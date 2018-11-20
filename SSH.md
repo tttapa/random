@@ -20,4 +20,5 @@ Or login to a desktop in one of the PC rooms
 ssh -X pc-klas<klas>-<computer>
 ```
 You don't have to specify the login name, because you're already logged in to Helium with that username.  
-For example, computer #3 of PC room 2.54 (room #3): `ssh -X pc-klas3-3`.
+For example, computer #3 of PC room 2.54 (room #3): `ssh -X pc-klas3-3`.  
+You can see who else is logged in to that computer by using the `who` command. If there are many people using that computer already, you should try a different one.
