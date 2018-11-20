@@ -5,7 +5,7 @@
 ssh -l <r-nummer> -X ssh.esat.kuleuven.be
 ```
 `-l` = login name  
-`-X` = X11 forwarding  
+`-X` = X11 forwarding, needed to run applications with a graphical user interface  
 Type `yes` and hit enter to add the server's identity.  
 Enter your KU Leuven password to log in.  
 You shouldn't do any heavy tasks on Helium, it's just a gateway to reach other computers on the ESAT Intranet.
