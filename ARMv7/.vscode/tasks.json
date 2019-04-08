@@ -1,0 +1,54 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Docker Image",
+            "type": "shell",
+            "command": "docker build -f Dockerfile --build-arg WORKSPACE_ROOT=${workspaceFolder} --network=host -t eagle1/armv7/develop .",
+            "windows": {
+                "command": "docker build -f Dockerfile.win -t eagle1/armv7/develop .",
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Start Docker Container",
+            "type": "shell",
+            "command": "docker-compose -f compose.yml run --service-ports --name armv7-devenv dev-image bash",
+            "windows": {
+                "command": "docker-compose -f compose.win.yml run --service-ports --name armv7-devenv dev-image bash",
+            },
+            "problemMatcher": [],
+            "dependsOn": "Stop Docker Container", // Restart if already running
+            "runOptions": {
+                "runOn": "folderOpen" // Run the container every time this folder is opened
+            },
+            "presentation": {
+                "echo": false,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+        {
+            "label": "Stop Docker Container",
+            "type": "shell",
+            "command": "docker-compose -f compose.yml down",
+            "windows": {
+                "command": "docker-compose -f compose.win.yml down",
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "echo": false,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+    ]
+}

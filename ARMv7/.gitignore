@@ -1,0 +1,6 @@
+gcc-armv7
+sysroot-mnt
+ipch
+build
+rootfs.cpio.uboot
+sysroot
